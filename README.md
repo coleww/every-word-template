@@ -1,10 +1,17 @@
-spooky-every-word
+every-word-template
 ----------------
 
-[![NPM](https://nodei.co/npm/spooky-every-word.png)](https://nodei.co/npm/spooky-every-word/)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Build Status](https://secure.travis-ci.org/coleww/spooky-every-word.png)](http://travis-ci.org/coleww/spooky-every-word)
+a starter project for [everyword](https://twitter.com/everyword) inspired bots. all credit unto [Allison Parrish](http://www.decontextualize.com/).
 
-### EXAMPLE
 
-### API
+```
+  git clone https://github.com/coleww/every-word-template.git
+  cd every-word-template
+  npm install
+  // put yr word list in words.js
+  // put yr twitter credentials in config.js
+  // replace the "SOMETHING" on line 10 of bot.js with yr everyword gimmick
+  // the bot stores it's current index in the `current` file, and incremements it every time it is called! 
+```
+
+### NOTE: this will not work on heroku due to the ephemeral filesystem. if you need to re-deploy yr bot after beginning it's task, be sure to update the value inside `current` so that it stays on track.

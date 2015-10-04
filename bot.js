@@ -1,11 +1,15 @@
-var spookyEveryWord = require('./')
-var config = require('./config')
+var fs = require('fs')
 var Twit = require('twit')
-var T = new Twit(config)
+var T = new Twit(require('./config'))
 
-var toot = spookyEveryWord()
+var words = require('./words')
 
-T.post('statuses/update', {status: toot}, function (err, data, response) {
+var current = ~~(fs.readFileSync('current').toString())
+fs.writeFileSync('current', current + 1)
+
+var status = 'SOMETHING ' + words[current]
+
+T.post('statuses/update', {status: status}, function (err, data, response) {
   console.log(err)
   console.log(data)
 })
