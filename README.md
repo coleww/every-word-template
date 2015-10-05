@@ -15,3 +15,8 @@ a starter project for [everyword](https://twitter.com/everyword) inspired bots. 
 ```
 
 ### NOTE: this will not work on heroku due to the ephemeral filesystem. if you need to re-deploy yr bot after beginning it's task, be sure to update the value inside `current` so that it stays on track.
+
+
+http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt this is a probably cool wordlist. probably peruse the wordlist and double check for any cusses or things that might carry weird or negative connotations within the context of yr everyword bot
+
+[corpora](https://github.com/dariusk/corpora) might be useful for doing shorter run every word events around more limited and specific meme concepts. these works are unlikely to stand the test of time, but thats ok i guess.
